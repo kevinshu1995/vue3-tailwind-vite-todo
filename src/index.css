@@ -1,3 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@200;400;900&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+    body {
+        font-family: "Noto Serif TC", serif;
+    }
+    [type="text"],
+    [type="email"],
+    [type="url"],
+    [type="password"],
+    [type="number"],
+    [type="date"],
+    [type="datetime-local"],
+    [type="month"],
+    [type="search"],
+    [type="tel"],
+    [type="time"],
+    [type="week"],
+    [multiple],
+    textarea,
+    select {
+        @apply bg-gray-600 outline-none;
+    }
+
+    [type="checkbox"],
+    [type="radio"] {
+        @apply bg-gray-900 text-green-500 ring-transparent focus:ring-transparent rounded-lg;
+    }
+}

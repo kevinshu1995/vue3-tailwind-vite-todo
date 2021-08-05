@@ -6,6 +6,7 @@
     "serve": "vite preview"
   },
   "dependencies": {
+    "@tailwindcss/forms": "^0.3.3",
     "vitawind": "^1.2.7",
     "vue": "^3.0.5"
   },
